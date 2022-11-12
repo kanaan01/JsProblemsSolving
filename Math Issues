@@ -1,0 +1,31 @@
+Math.round = function(number) {
+  
+ if(number%1 >=0.5)
+    {
+       return parseInt(number) +1
+    }
+    else
+    {
+        return parseInt(number)
+    }
+};
+Math.ceil = function(number) {
+  if(number % 1 != 0)
+    {
+        return parseInt(number)+1;
+    }
+    else
+    {
+        return number;
+    }};
+
+Math.floor = function(number) {
+  if(number % 1 != 0)
+    {
+        return parseInt(number)
+    }
+    else
+    {
+        return number
+    }
+};
