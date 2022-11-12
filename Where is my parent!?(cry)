@@ -1,0 +1,21 @@
+function findChildren(dancingBrigade) {
+
+  
+  let sorting = dancingBrigade.toLowerCase().split("").sort();
+  let obj={ };
+  let Result="";
+  for(let i=0;i<sorting.length;i++)
+  {
+    if(sorting[i] in obj)
+    {
+      obj[sorting[i]]+=1;
+    }else{
+     obj[sorting[i]]=1
+    }
+  }
+  for(let key in obj)
+  {
+    Result+= `${key.toUpperCase()}${key.repeat(obj[key]-1)}`
+  }
+ return Result;
+}
