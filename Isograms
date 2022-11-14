@@ -1,0 +1,17 @@
+function isIsogram(str) {
+  
+   if(!str.isEmpty)
+    {
+        let array = str.toUpperCase().split('').sort();
+        let Arrlength = array.length;
+        for (let i = 0; i< Arrlength; i++)
+        {
+          if (array[i + 1] == array[i])
+            return false;
+        }
+          return true
+
+      }
+    else 
+        return false
+}
