@@ -1,0 +1,6 @@
+function digitize(n) {
+  
+   let a =n+"";
+    return a.split('').map(Number).reverse()
+    
+}
