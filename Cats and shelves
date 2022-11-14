@@ -1,0 +1,10 @@
+function solution(start, finish) 
+{
+  let total = finish-start
+
+  let ThreeJumps = Math.floor(total/3)
+
+  let OneJump = total % 3
+
+  return ThreeJumps + OneJump
+}
