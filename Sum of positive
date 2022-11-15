@@ -1,0 +1,6 @@
+function positiveSum(arr) {
+  let sum =0;
+   
+  arr.map( m=>  m>0 ? sum =sum +m : null)
+          return sum;
+}
