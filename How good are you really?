@@ -1,0 +1,22 @@
+//silution 1
+function betterThanAverage(classPoints, yourPoints) {
+  return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length; 
+}
+//silution 2 
+function betterThanAverage(classPoints, yourPoints) {
+
+ let arr= classPoints.push(yourPoints)
+ let sum=0;
+  let l= classPoints.length +1;
+  let final =l-1;
+  for(let i=0;i<final;i++)
+    {
+      sum+=classPoints[i];
+    }
+  
+  let avg = sum/l;
+  console.log(avg)
+  if(avg >yourPoints) return false
+  else
+    return true
+}
