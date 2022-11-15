@@ -1,0 +1,15 @@
+function XO(str)
+{
+  let xNumber =0;
+  let oNumber =0;
+  let arr= str.toLowerCase();
+  for (let i=0; i<str.length; i++)
+  {
+    if (arr[i] === 'x')
+      xNumber ++;
+    if (arr[i] === 'o') 
+      oNumber ++
+   
+   }
+    return xNumber === oNumber;
+}
