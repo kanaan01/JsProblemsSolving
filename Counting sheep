@@ -1,0 +1,6 @@
+function countSheeps(arrayOfSheep) {
+  
+   let sum =0;
+   arrayOfSheep.map((item) => item === true? sum++ : console.log("LOL ,i need to do the else statment "));     
+   return sum
+ }
