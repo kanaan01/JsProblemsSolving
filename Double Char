@@ -1,0 +1,7 @@
+function doubleChar(str) {
+
+  let text = ""
+  let arr=str.split("")
+   arr.map(m=> text=text+ m.repeat(2))
+  return text
+ }
