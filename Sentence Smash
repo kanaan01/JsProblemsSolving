@@ -1,0 +1,7 @@
+function smash (words) {
+ 
+  let str="";
+  words.map((m)=> str+=m+" ")     
+  return str.trim();
+  
+};
