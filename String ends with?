@@ -1,0 +1,11 @@
+function solution(str, ending){
+    
+ let a= str.slice(-(ending.length));
+  if( a === ending) 
+    return true ;
+  if(ending.length ==0 || ending === null)
+    return true
+   else 
+   return false
+      
+}
