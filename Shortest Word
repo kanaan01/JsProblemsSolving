@@ -1,0 +1,2 @@
+const findShort =(s)=> Math.min(...s.split(" ").map(m=>m.length))
+
